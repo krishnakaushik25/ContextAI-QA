@@ -22,12 +22,19 @@ The workflow consists of:
 4. **Production-Ready Serving:** All components are containerizable and can be orchestrated for scalable deployments (e.g., with Ray, FastAPI, Streamlit).
 
 **Key Features:**
-- Distributed LLM fine-tuning for large models (20B+ parameters)
+- Distributed LLM fine-tuning for large models
 - Multi-worker data pipelines for embedding, indexing, and loading new context
 - Modular serving (API, web, batch, or stream processing)
 - Compatibility with vector DBs like Deta and frameworks like LangChain
 
 ---
+
+The architecture Flow for the app is shown below:
+![Architecture_Flow](./images/architecture.png)
+
+The component evaluations of the retrieval system and LLM (left) and Overall evaluation (right) are shown below:
+![component_evaluations](./images/component_evaluation.png)
+
 
 ## Repository Layout
 
@@ -122,18 +129,6 @@ ContextAI-QA/
 - Experiment with different LLM architectures or sizes
 - Integrate advanced logging or explainability modules
 - Deploy at scale using Docker, Ray clusters, or Kubernetes
-
----
-
-## Licensing
-
-Check the LICENSE file or relevant model/dataset licenses before using in production.
-
----
-
-## Credits & Acknowledgments
-
-- Built as an original work inspired by modern RAG QA architectures and open-source LLM engineering best practices.
 
 ---
 
